@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build your duck</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="./imgs/icons/rubber-duck.png">
+</head>
+<body class="bg-gray-200">
+    <!--Header-->
+    <h1 class="text-3xl font-extrabold text-gray-900 dark:text-black md:text-5xl lg:text-5xl text-center bg-yellow-300 pb-4 border-b-2 border-solid border-black" style="font-family: Comic Sans MS;">
+        Lego Serious Play
+    </h1>
+
+    <h2 class="text-5xl font-italic text-black-900 dark:text-black md:text-6xl lg:text-4xl mt-4 text-center">¿Cómo construir un pato?</h2>
+     <div class="flex flex-col justify-center items-center min-h-screen bg-white-900">
+        <!-- Contenedores superiores -->
+        <div class="flex justify-between w-full p-3 bg-white-400 mb-4">
+            <div class="w-1/4 p-0 bg-gray-200" id="duck1Container">
+                <!-- Contenido de Duck 1 -->
+                <img src="./imgs/pato1/Pato1_Final.png" class="w-full flex-shrink-100 border-2 border-black h-full" alt="Imagen 1">
+                <h1 class="text-center bg-blue-500">
+                    <!-- Boton Duck 1 -->
+                    <button class="w-full h-full hover:bg-blue-700 text-white font-bold py-2 px-4 border-2 border-solid border-black " id="Duck1">
+                        Duck 1
+                    </button>
+                </h1>
+            </div>
+            <div class="flex justify-center items-center h-auto">
+                <div class="relative w-full sm:w-full md:w-full lg:w-96 xl:w-96">
+                    <!-- Carrusel -->
+                    <div id="carousel" class="overflow-hidden rounded-lg">
+                        <!-- Imagenes del carrousel -->
+                        <div class="flex transition-transform duration-300 ease-in-out">
+                            <!-- Aquí se mostrarán los pasos de construcción -->
+                        </div>
+                    </div> <!-- Cerramos carrousel. -->
+        
+                    <!-- Botones Previous y Next para cambiar imágenes -->
+                    <div class="relative">
+                        <div class="absolute  flex justify-between w-full px-2 py-4">
+                            <button id="prevBtn" class="bg-violet-500 hover:bg-violet-700 text-white font-bold py-2 px-4 rounded">
+                                Previous
+                            </button>
+                            <div class="indice-guia">
+                                <h1>
+                                    <span class="inline-flex items-center justify-center w-12 h-12 bg-orange-400 hover:bg-orange-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm text-white p-4 text-center dark:bg-orange-400 dark:hover:bg-orange-400 dark:focus:ring-blue-800" id="indice-guia">1</span>
+                                </h1>
+                            </div>
+                            <button id="nextBtn" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/4 p-0 bg-gray-200" id="duck2Container">
+                <!-- Contenido de Duck 2 -->
+                <img src="./imgs/pato2/Pato2_Final.png" class="w-full flex-shrink-100 border-2 border-black h-full" alt="Imagen 2">
+                <h1 class="text-center bg-red-300">
+                    <button class="w-full h-full bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border-2 border-solid border-black" id="Duck2">
+                        Duck 2
+                    </button>
+                </h1>
+            </div>
+        </div>
+        
+
+    <script src="script.js"></script>
+</body>
+</html>
